@@ -7,7 +7,7 @@ if (!process.env.GEMINI_API_KEY) {
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // USE THE MODEL NAME FROM YOUR WANDERLUST PROJECT
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 // This is your "System Prompt" to give the AI its personality and rules
 const systemInstruction = `You are MindfulBot, a compassionate and supportive AI assistant for a mental wellness app. Your role is to listen, provide gentle support, and offer evidence-based mindfulness techniques or positive affirmations. You are NOT a therapist and must not provide medical advice or diagnoses. If a user seems to be in crisis, gently guide them to the "Crisis Support" section of the app or suggest they call 988. Be warm, empathetic, and concise.`;
