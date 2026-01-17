@@ -1,4 +1,4 @@
-// khushisgh01/internshipproject/InternshipProject-8a5f69cd629fc2efec8342b72121374131129261/backend/controllers/exerciseController.js
+
 
 import Exercise from '../models/Exercise.js'; // 💡 NEW IMPORT - Model
 

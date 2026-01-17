@@ -1,4 +1,4 @@
-// khushisgh01/internshipproject/InternshipProject-8a5f69cd629fc2efec8342b72121374131129261/src/pages/Journel.jsx
+
 
 import React, { useState, useEffect, useCallback } from 'react'
 import Sidebar from '../components/ui/Sidebar'

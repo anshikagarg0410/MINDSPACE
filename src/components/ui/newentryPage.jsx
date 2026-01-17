@@ -1,4 +1,4 @@
-// khushisgh01/internshipproject/InternshipProject-8a5f69cd629fc2efec8342b72121374131129261/src/components/ui/newentryPage.jsx
+
 
 import React from 'react';
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom';

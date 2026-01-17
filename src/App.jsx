@@ -1,4 +1,4 @@
-// khushisgh01/internshipproject/InternshipProject-8a5f69cd629fc2efec8342b72121374131129261/src/App.jsx
+
 
 import Home from './pages/Home.jsx'
 import Auth from './pages/Auth.jsx' // 💡 NEW: Import Auth component

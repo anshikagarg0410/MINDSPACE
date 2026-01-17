@@ -1,4 +1,3 @@
-// khushisgh01/internshipproject/InternshipProject-cbc12df567540c298725777ce3956a030bf171e4/backend/controllers/therapistController.js
 
 import Therapist from '../models/Therapist.js'; // 💡 NEW IMPORT - Model
 
