@@ -25,6 +25,7 @@ import FindTherapistContent from './components/ui/FindTherapistContent.jsx'
 import TherapyTypesContent from './components/ui/TherapyTypesContent.jsx' 
 import InsuranceCostsContent from './components/ui/InsuranceCostsContent.jsx' 
 import AIChat from './pages/AIChat.jsx' 
+import ExercisePlayer from './pages/ExercisePlayer.jsx';
 import ProtectedRoute from './components/ui/ProtectedRoute.jsx' 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext' // 💡 NEW: Import AuthProvider
@@ -58,8 +59,18 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path:'/exercises',
-    element:<ProtectedRoute><Exercises/></ProtectedRoute>
+    path: '/exercises',
+  
+    children: [
+      {
+        index: true, // This matches '/exercises'
+        element: <ProtectedRoute><Exercises/></ProtectedRoute>
+      },
+      {
+        path: 'player', // This matches '/exercises/player'
+        element: <ProtectedRoute><ExercisePlayer/></ProtectedRoute>
+      }
+    ]
   },
   {
     path:'/soundscapes',

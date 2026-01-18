@@ -24,6 +24,7 @@ router.delete('/journal/:id', protect, journalController.deleteJournalEntry);
 router.get('/exercises', protect, exerciseController.getExercises);
 
 
+
 // --- FIND THERAPIST Routes (Public, but often available to authenticated users) ---
 // 💡 Protecting the list, as general practice in a fully authenticated app
 router.get('/therapists', protect, therapistController.getTherapistListings);

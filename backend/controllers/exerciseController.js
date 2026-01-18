@@ -14,6 +14,7 @@ const getExercises = async (req, res) => {
     }
 };
 
+
 export default {
     getExercises,
 };

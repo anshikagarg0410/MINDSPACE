@@ -110,6 +110,7 @@ const Exercises = () => {
                   category={exercise.category}
                   difficulty={exercise.difficulty}
                   benefits={exercise.benefits}
+                  videoUrl={exercise.videoUrl}
                 />
               ))}
             </div>
