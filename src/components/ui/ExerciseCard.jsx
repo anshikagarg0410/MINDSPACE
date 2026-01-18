@@ -1,12 +1,20 @@
 import React from 'react';
 
-const ExerciseCard = ({ imageSrc, title, duration, category, difficulty, benefits }) => {
+const ExerciseCard = ({ imageSrc, title, duration, category, difficulty, benefits,videoUrl }) => {
   // Determine the color class for the difficulty badge
   const difficultyColor = {
     'Beginner': 'bg-green-100 text-green-700',
     'Intermediate': 'bg-orange-100 text-orange-700',
     'Advanced': 'bg-red-100 text-red-700',
   }[difficulty] || 'bg-gray-100 text-gray-700';
+
+  const handleStartExercise = () => {
+    if (videoUrl) {
+      window.open(videoUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      alert("No video available for this exercise.");
+    }
+  };
 
   return (
     <div className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.01] cursor-pointer">
@@ -40,7 +48,7 @@ const ExerciseCard = ({ imageSrc, title, duration, category, difficulty, benefit
 
         {/* Action Button */}
         <div className="mt-auto">
-          <button className="w-full py-2 px-4 bg-violet-500 text-white font-semibold rounded-xl hover:bg-violet-600 transition-colors duration-200 flex items-center justify-center">
+          <button onClick={handleStartExercise} className="w-full py-2 px-4 bg-violet-500 text-white font-semibold rounded-xl hover:bg-violet-600 transition-colors duration-200 flex items-center justify-center">
             <span className="mr-2">▶</span>
             Start Exercise
           </button>

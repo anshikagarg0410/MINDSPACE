@@ -15,6 +15,7 @@ const ExerciseSchema = new mongoose.Schema({
     category: { type: String, required: true },
     difficulty: { type: String },
     benefits: { type: String },
+    videoUrl: { type: String }
 });
 
 const Exercise = mongoose.model('Exercise', ExerciseSchema);

@@ -6,7 +6,8 @@
     "duration": 5,
     "category": "Breathing",
     "difficulty": "Beginner",
-    "benefits": "A simple 4-4-4-4 breathing technique to reduce anxiety and increase focus."
+    "benefits": "A simple 4-4-4-4 breathing technique to reduce anxiety and increase focus.",
+    "videoUrl":"https://www.youtube.com/watch?v=FJJazKtH_9I"
   },
   {
     "id": 2,
@@ -15,7 +16,9 @@
     "duration": 4,
     "category": "Breathing",
     "difficulty": "Beginner",
-    "benefits": "Exhale stress and inhale calm with this powerful sleep-inducing technique."
+    "benefits": "Exhale stress and inhale calm with this powerful sleep-inducing technique.",
+    "videoUrl":"https://www.youtube.com/watch?v=LiUnFJ8P4gM"
+
   },
   {
     "id": 3,
@@ -24,7 +27,8 @@
     "duration": 12,
     "category": "Mindfulness",
     "difficulty": "Intermediate",
-    "benefits": "Cultivate compassion for yourself and others through guided meditation."
+    "benefits": "Cultivate compassion for yourself and others through guided meditation.",
+    "videoUrl":"https://www.youtube.com/watch?v=r0mGnsn8CRU"
   },
   {
     "id": 4,
@@ -33,6 +37,7 @@
     "duration": 20,
     "category": "Mindfulness",
     "difficulty": "Beginner",
-    "benefits": "Transform a simple meal into a meditation practice."
+    "benefits": "Transform a simple meal into a meditation practice.",
+    "videoUrl":"https://www.youtube.com/watch?v=qh26nYk0Ygw"
   }
 ]
